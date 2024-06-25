@@ -1,0 +1,89 @@
+.layout-navbar{
+  width: 100%;
+  height: 48px;
+  background: #fff;
+  border-left: 1px solid #e4e4e4;
+  padding: 8px 8px 0 8px;
+  display: flex;
+  align-items: flex-end;
+  overflow-x: auto;
+  overflow-y: hidden;
+  .btn{
+    padding: 0px 10px;
+    height: 40px;
+    color: #333;
+    background: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer !important;
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      height: 50%;
+      top: 25%;
+      right: 0;
+      border-right: 1px solid #e4e4e4;
+    }
+    .tag_name{
+      display: -webkit-box;
+      // -webkit-line-clamp: 1;
+      -webkit-box-orient:vertical;
+      overflow: hidden;
+      height: 16px;
+      line-height: 16px;
+      text-align: center;
+      position: relative;
+      font-size: 12px;
+    }
+    .next-icon{
+      position: relative;
+    }
+    .next-icon:hover{
+      font-weight: bold;
+    }
+    // .next-icon:after{
+    //   content: '';
+    //   position: absolute;
+    //   height: 100%;
+    //   top: 0;
+    //   left: -12px;
+    //   width: 12px;
+    //   background: linear-gradient(to right, rgba(255,255,255,0), rgba(255, 255, 255, 1));
+    //   pointer-events: none;
+    // }
+    &.active, &:hover{
+      color: $main-color;
+      background: $light-hover-color;
+      &:after{
+        content: '';
+        position: absolute;
+        height: 50%;
+        top: 25%;
+        right: 0;
+        border-right: 1px solid transparent;
+      }
+      &:before{
+        content: '';
+        position: absolute;
+        height: 50%;
+        top: 25%;
+        left: -1px;
+        border-right: 1px solid #fff;
+      }
+      // .next-icon:after{
+      //   content: '';
+      //   position: absolute;
+      //   height: 100%;
+      //   top: 0;
+      //   left: -12px;
+      //   width: 12px;
+      //   background: linear-gradient(to right,rgba(255,255,255,0), $light-hover-color);
+      //   pointer-events: none;
+      // }
+    }
+  }
+}

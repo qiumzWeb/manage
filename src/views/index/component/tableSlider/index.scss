@@ -1,0 +1,38 @@
+.table-slider-box{
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  font-size: 12px;
+ .s-c-b-table-title{
+   display: flex;
+   justify-content: center;
+   background: #EEF1F6;
+   .s-c-b-table-t-cell{
+     flex: 1;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 2px;
+     white-space: nowrap;
+     overflow: hidden;
+   }
+ }
+ .s-c-b-tr{
+    background: #FCFDFE;
+    &:nth-child(even){
+      background: rgba(238, 241, 246, 0.5);
+    }
+  }
+ .s-c-b-table-tr{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #eee;
+  .s-c-b-table-t-cell{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+  }
+ }
+}

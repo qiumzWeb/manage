@@ -1,0 +1,31 @@
+.abnormal-m-box{
+  background: #fff;
+  border-radius: px2rem(10);
+  height: 100%;
+  overflow: hidden;
+  font-size: px2rem(12);
+  .abnormal-m-title{
+    display: flex;
+    align-items: center;
+    line-height: 100%;
+    padding: px2rem(10) px2rem(10) 0;
+  }
+  .a-m-b-title{
+    font-weight: bold;
+    font-size: px2rem(14);
+  }
+  .a-m-b-tag{
+    display: flex;
+    padding: px2rem(4) px2rem(12);
+    background: $main-color;
+    color: rgba(255,255,255,0.9);
+    font-size: px2rem(12);
+    border-radius: px2rem(20);
+    align-items: center;
+    span{
+      font-size: px2rem(14);
+      margin-left: px2rem(10);
+      color: #fff;
+    }
+  }
+}

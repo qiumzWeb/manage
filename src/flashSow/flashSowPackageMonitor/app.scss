@@ -1,0 +1,119 @@
+.flashSowPackageMonitor {
+  height: calc(100vh - 200px);
+  .no-data{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d9d9d9;
+    font-size: 20px;
+    border: 1px solid $card-border-color;
+  }
+  .flashSowCard{
+    display: flex;
+    flex-wrap: wrap;
+    .flashSow-card{
+      position: relative;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      width: 600px;
+      overflow: hidden;
+      &.big{
+        width: 600px;
+      }
+    }
+    .flashSow-card-box{
+      color: #333;
+      font-weight: bold;
+    }
+    .fl-card-li{
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    .fl-card-grid{
+      margin-bottom: 5px;
+      padding: 5px;
+      .crad-list-cell{
+        font-weight: 400;
+        &:first-child{
+          font-weight: bold;
+        }
+      }
+    }
+    .fl-card-grid-around {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .cell-box{
+        flex: 1;
+      }
+    }
+    @for $i from 2 through 10 {
+      .fl-card-grid-#{$i} {
+        display: grid;
+        grid-template-columns: repeat(#{$i}, 1fr);
+      }
+    }
+    .fl-card-grid-5 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr 2fr 2fr;
+    }
+    .text-center{
+      text-align: center;
+    }
+    .card-title{
+      font-size: 14px;
+      border-bottom: 1px solid $card-border-color;
+      padding-bottom: 10px;
+    }
+    .text-name{
+      color: #666;
+      font-weight: normal;
+    }
+    .text-title{
+      margin-bottom: 10px;
+      @extend .text-name;
+    }
+    .flag{
+      display: inline-block;
+      padding: 4px;
+      border-radius: 4px;
+      margin-left: 10px;
+      border: 1px solid #bfbfbf;
+      font-size: 12px;
+      &.grad{
+        color: #bbb;
+        // background-color: #ddd;
+      }
+      &.succ{
+        color: $succ-color;
+        border: 1px solid $succ-color;
+        // color: #fff;
+        // background-color: $succ-color;
+      }
+    }
+    .flag-over{
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 5px;
+      right: 5px;
+      transform: rotate(45deg);
+      opacity: 0.6;
+      &.grad{
+        border: 4px solid #ccc;
+        color: #ccc;
+      }
+      &.succ {
+        border: 4px solid $succ-color;
+        color: $succ-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.outsingle-add-up-box{
+  background: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: calc(45% - 5px);
+  position: relative;
+  .bold{
+    font-weight: bold;
+  }
+  .s-a-b-title{
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 16px;
+  }
+  .s-a-b-tag{
+    display: flex;
+    padding: 4px 12px;
+    background: $main-color;
+    color: rgba(255,255,255,0.9);
+    font-size: 12px;
+    border-radius: 20px;
+    align-items: center;
+    span{
+      font-size: 16px;
+      margin-left: 10px;
+      color: #fff;
+    }
+  }
+  .single-add-up-data{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    position: relative;
+    overflow: hidden;
+    padding: 0 12px;
+  }
+  .single-left-title{
+    position: absolute;
+    z-index: 2;
+    width: 30px;
+    height: 80px;
+    left: -8px; 
+    // top: 8px;
+    background: $main-color;
+    color: #fff;
+    writing-mode: vertical-lr; 
+    letter-spacing: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 16px;
+    font-weight: bold;
+    &::after{
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      content: '';
+      width: 0;
+      height: 0;
+      border-right: 4px $main-color solid;
+      border-top: 2px $main-color solid;
+      border-left: 4px transparent solid;
+      border-bottom: 2px transparent solid;
+    }
+  }
+  .single-add-up-title{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px;
+  }
+  .single-add-up-list{
+    display: flex;
+    font-size: 14px;
+    position: relative;
+    overflow: hidden;
+    flex: 4;
+    justify-content: space-around;
+    align-items: center;
+    background: #F2F4F8;
+    padding-left: 24px;
+    .single-add-up-list-cell{
+      flex: 1;
+      padding: 10px;
+      white-space: nowrap;
+    }
+    .up-cell-value{
+      font-size: 16px;
+      white-space: nowrap;
+      &.main{
+        color: $main-color;
+        font-weight: bold;
+      }
+      &.red{
+        color: $color-menu;
+      }
+    }
+  }
+}

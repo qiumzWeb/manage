@@ -1,0 +1,80 @@
+.pcs-left-nav{
+  position:relative;
+  z-index: 101;
+  // box-shadow: 2px 0px 4px 0px rgba(211,215,226,0.60);
+  height: calc(100vh - #{$header-height});
+  overflow: hidden;
+  // background-color: $color-menu;
+  // font-size: 14px;
+  background: #fff;
+  transition: width .3s;
+  &.opened{
+    width: $menu-width-opened; 
+  }
+  &.closed{
+    width: $menu-width-closed;
+  }
+}
+.pcs-menu{
+  height: calc(100vh - #{$menu-safe-height} - 20px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 6px;
+}
+.next-menu-spacing-lr{
+  bottom: 0px;
+  top: 70px !important;
+  min-width: 150px;
+}
+.next-menu-item-list{
+  position: relative;
+  .next-menu-sidebar-left-line{
+    position: absolute;
+    left: 16px;
+    border-left: 1px solid $card-border-color;
+    width: 0;
+    height: calc(100% - 40px);
+    top: 40px;
+  }
+}
+
+.menuPopBox{
+  height: 100%;
+  overflow: auto;
+}
+.pcs-nav-open-btn{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+}
+.pcs-nav-open-model{
+  position: fixed;
+  z-index: 99;
+  top: 56px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: #fff;
+  overflow: auto;
+  transition: height .3s;
+  &.active{
+    height: calc(100vh - 60px);
+  }
+  .open-model-cell{
+    position: relative;
+    float: left;
+    width: 160px;
+    font-size: 16px;
+    border: none;
+    border-left: 1px solid #ccc;
+    .open-model-cell-page {
+      margin: 10px;
+      cursor: pointer;
+      &:hover{
+        color: $main-color;
+      }
+    }
+  }
+}

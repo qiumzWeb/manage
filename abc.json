@@ -1,0 +1,25 @@
+{
+  "assets":{
+    "type":"command",
+    "command":{
+      "cmd":[
+        "tnpm install",
+        "tnpm run build",
+        "mv ./build $BUILD_DEST"
+      ]
+    }
+  },
+  "nodeVersion": 16,
+  "buildCacheConfig": [
+    {
+      "buildCachePath": "node_modules/.caches",
+      "cacheKeyDependencies": [
+        "c-build/config/index.js",
+        "c-build/config/webpack.base.conf.js",
+        "c-build/config/webpack.prod.conf.js",
+        "c-build/config/loaders.js",
+        "env.js"
+      ]
+    }
+  ]
+}

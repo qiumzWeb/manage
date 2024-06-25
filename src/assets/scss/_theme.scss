@@ -1,0 +1,160 @@
+// @import "./style/_color.scss";
+@import "@alife/theme-26075/variables.scss";
+// @import '@alifd/theme-18273/variables.scss';
+$scroll-bar-thumb: rgba(0,0,0,.1);
+$scroll-bar-track: rgba(0,0,0,0.05);
+$header-height: 56px;
+$menu-safe-height: 70px;
+$menu-bar-height: 40px;
+$menu-width-opened: 250px;
+$menu-width-closed: 60px;
+$content-safe-height: 70px;
+$color-menu: rgba(255,100,0,1);
+$main-color: $color-brand1-6;
+$hover-color: $color-brand2-5;
+$color-bg-light: #f6f7fc;
+// $light-hover-color: $color-brand2-7;
+$light-hover-color: rgba(40,76,192,0.05);
+$light-primary-color: rgba(40,76,192,0.8);
+$button-border-color: #cfd2db;
+$card-border-color: #e7e8ed;
+$succ-color: #18BD92;
+$fail-color: rgb(248, 83, 89);
+$fail-back: rgba(248, 83, 89, 0.1);
+.mch{
+  height: calc(100% - 62px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-right: -10px;
+  padding-right: 10px;
+  &.full{
+    height: 100%;
+  }
+}
+
+.table-scroll-box{
+  // width: 100%;
+  position: absolute;
+  height: 20px;
+  bottom: 55px;
+  // left: 30px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  z-index: 88;
+}
+.table-scroll-mark{
+    // width: 100%;
+    position: absolute;
+    height: 60px;
+    bottom: 0px;
+    // left: 30px;
+    width: calc(100% - 36px);
+    z-index: 10;
+    background: #fff;
+}
+.table-defined-set{
+  position: absolute;
+  bottom: 0px;
+  left: 15px;
+  // width: calc(100% - 36px);
+  background: #fff;
+  height: 50px;
+  padding-top: 10px; 
+  z-index: 12;
+}
+
+.downcenter_SUCC{
+  color: $succ-color !important;
+}
+.success-color{
+  @extend .downcenter_SUCC;
+}
+.downcenter_FAIL{
+  color: $fail-color !important;
+}
+.fall-color {
+  @extend .downcenter_FAIL;
+}
+.downcenter_INIT{
+  color: $main-color !important;
+}
+.warn-color{
+  color: $color-menu !important;
+}
+.main-back{
+  background-color: $main-color !important;
+}
+.succ-back{
+  background-color: $succ-color !important;
+}
+.fail-back{
+  background-color: $fail-color !important;
+}
+.warn-back{
+  background-color: $color-menu !important;
+}
+.linght-back{
+  background-color: $light-hover-color !important;
+}
+.main-border {
+  border-color: $main-color !important;
+}
+.succ-border{
+  border-color: $succ-color !important;
+}
+.fail-border{
+  border-color: $fail-color !important;
+}
+.warn-border{
+  border-color: $color-menu !important;
+}
+.button-border{
+  border-color: $button-border-color;
+}
+.font-bold{
+  font-weight: bold !important;
+}
+// px转rem
+@function px2rem($px) {
+  @return calc($px / 20) * 1rem;
+}
+.next-icon, .cn-next-icon {
+  &.isRemXl {
+    font-size: px2rem(18);
+    &:before{
+      // width: px2rem(18);
+      font-size: px2rem(18)
+    }
+  }
+  &.isRemXs {
+    font-size: px2rem(16);
+    &:before{
+      // width: px2rem(16);
+      font-size: px2rem(16)
+    }
+  }
+}
+img {
+  &.isRemXl {
+    width: px2rem(20);
+    font-size: px2rem(20)
+  }
+}
+.next-icon.next-icon-help{
+  color: $light-primary-color;
+}
+.pcs-rem-help{
+  // display: inline-block;
+  // border-radius: 50%;
+  font-size: px2rem(18);
+  // width: px2rem(16);
+  // height: px2rem(16);
+  // border: px2rem(1) solid #666;
+  // background: $light-primary-color;
+  // color: #fff;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 400;
+  // line-height: px2rem(16);
+  vertical-align: middle;
+}

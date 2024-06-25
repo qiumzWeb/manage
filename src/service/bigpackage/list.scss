@@ -1,0 +1,61 @@
+.pam-wrap {
+  .cn-opt-bar {
+    padding: 16px 18px 16px 11px;
+    span {
+      font-size: 14px;
+    }
+
+  }
+  .search-con {
+    padding: 20px 10px 0;
+    border-bottom: 1px solid rgb(238, 238, 238)
+  }
+  .data-table {
+    margin-left: 10px;
+    width: 150%;
+    padding-right: 50px;
+  }
+  .custom-pagination {
+    margin-left: 12px;
+  }
+  .un-spread {
+    width: 48px;
+    flex: 0 0 48px;
+    min-width: auto;
+  }
+
+  .action-btn {
+    margin: 10px 10px 10px 0;
+  }
+
+  .next-col-fixed-5 {
+    flex: 0 0 120px;
+    width: 120px;
+    max-width: 120px;
+  }
+
+  .next-col-fixed-15 {
+    flex: 0 0 330px;
+    width: 330px;
+    max-width: 330px;
+  }
+
+}
+
+.next-dialog-body {
+  padding: 20px 20px 20px 20px;
+  font-size: 12px;
+  color: #666666;
+}
+
+.next-form-item.next-large {
+  margin-bottom: 0px;
+}
+
+.next-input.next-input-textarea textarea {
+  color: #333333;
+  padding: 4px 8px 0px;
+  font-size: 12px;
+  border-radius: 0px;
+  width: 460px;
+}

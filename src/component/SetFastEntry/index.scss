@@ -1,0 +1,33 @@
+
+  .set-entry-box{
+    display: flex;
+    .set-left,.set-right{
+      flex: 1;
+    }
+    .set-tap-title{
+      font-size: 16px;
+      color: #333;
+    }
+    .set-cell-row{
+      width: 262px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      background: #fff;
+      border: 1px solid rgba(195,203,213,1);
+      border-radius: 8px;
+      &.disabled{
+        background: #EEF1F6;
+        
+      }
+    }
+    .setTree{
+      border: 1px solid rgba(218,223,232,1);
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 20px;
+      height: 385px;
+      overflow: auto;
+    }
+  }

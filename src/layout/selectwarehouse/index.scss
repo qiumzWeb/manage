@@ -1,0 +1,25 @@
+.p-company-select{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  &:hover, &.active{
+    background: $light-hover-color;
+    cursor: pointer;
+    color: $main-color;
+  }
+}
+.p-ware-select{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  &:hover{
+    background: $light-hover-color;
+    cursor: pointer;
+    color: $main-color;
+  }
+  &.active{
+    background: $main-color;
+    cursor: pointer;
+    color: #fff;
+  }
+}

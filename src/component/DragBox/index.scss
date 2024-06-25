@@ -1,0 +1,7 @@
+.dragbox{
+  position: fixed;
+  z-index: 999;
+  cursor: move;
+  display: none;
+  touch-action: none;
+}

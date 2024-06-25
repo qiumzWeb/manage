@@ -1,0 +1,17 @@
+.storage-c-box{
+  background: #fff;
+  border-radius: 10px;
+  height: 100%;
+  overflow: hidden;
+  font-size: 12px;
+  .storage-c-title{
+    display: flex;
+    align-items: center;
+    line-height: 100%;
+    padding: 10px 10px 0;
+  }
+  .s-c-b-title{
+    font-weight: bold;
+    font-size: 16px;
+  }
+}

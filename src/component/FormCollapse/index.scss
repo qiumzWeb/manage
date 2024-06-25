@@ -1,0 +1,48 @@
+.pcs-a-form-box{
+  position: relative;
+  .pcs-a-form-collapse{
+    position: relative;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    // margin-top: 10px;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: 0;
+      background: $color-border-lighter;
+      height: 1px;
+      width: 100%;
+      z-index: 1;
+    }
+    .pcs-a-form-collapse-btn{
+      position: relative;
+      z-index: 2;
+      background: $color-border-lighter;
+      border-radius: $s-5;
+      font-size: 12px;
+      font-size: $s-3;
+      color: #333;
+      color: $color-text;
+      height: $s-5;
+      line-height: $s-5;
+      padding: 0 $s-3;
+      text-align: center;
+      cursor: pointer;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      i{
+        font-weight: bold;
+      }
+      &:hover{
+        color: $main-color;
+      }
+    }
+  }
+}

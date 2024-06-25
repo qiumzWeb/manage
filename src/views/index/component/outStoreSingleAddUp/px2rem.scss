@@ -1,0 +1,100 @@
+.outsingle-add-up-box{
+  background: #fff;
+  border-bottom-left-radius: px2rem(10);
+  border-bottom-right-radius: px2rem(10);
+  height: calc(50% - px2rem(5));
+  position: relative;
+  .bold{
+    font-weight: bold;
+  }
+  .s-a-b-title{
+    font-weight: bold;
+    margin-right: px2rem(15);
+    font-size: px2rem(14);
+  }
+  .s-a-b-tag{
+    display: flex;
+    padding: px2rem(4) px2rem(12);
+    background: $main-color;
+    color: rgba(255,255,255,0.9);
+    font-size: px2rem(12);
+    border-radius: px2rem(20);
+    align-items: center;
+    span{
+      font-size: px2rem(14);
+      margin-left: px2rem(10);
+      color: #fff;
+    }
+  }
+  .single-add-up-data{
+    display: flex;
+    align-items: center;
+    font-size: px2rem(14);
+    position: relative;
+    overflow: hidden;
+    padding: 0 px2rem(12);
+  }
+  .single-left-title{
+    position: absolute;
+    z-index: 2;
+    width: px2rem(30);
+    height: px2rem(80);
+    left: px2rem(-8); 
+    // top: px2rem(8);
+    background: $main-color;
+    color: #fff;
+    writing-mode: vertical-lr; 
+    letter-spacing: px2rem(15);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: px2rem(14);
+    font-weight: bold;
+    &::after{
+      position: absolute;
+      left: 0;
+      bottom: px2rem(-4);
+      content: '';
+      width: 0;
+      height: 0;
+      border-right: px2rem(4) $main-color solid;
+      border-top: px2rem(2) $main-color solid;
+      border-left: px2rem(4) transparent solid;
+      border-bottom: px2rem(2) transparent solid;
+    }
+  }
+  .single-add-up-title{
+    font-size: px2rem(14);
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding: px2rem(6);
+  }
+  .single-add-up-list{
+    display: flex;
+    font-size: px2rem(14);
+    position: relative;
+    overflow: hidden;
+    flex: 4;
+    justify-content: space-around;
+    align-items: center;
+    background: #F2F4F8;
+    padding-left: px2rem(24);
+    .single-add-up-list-cell{
+      flex: 1;
+      padding: px2rem(10);
+      white-space: nowrap;
+    }
+    .up-cell-value{
+      font-size: px2rem(14);
+      white-space: nowrap;
+      &.main{
+        color: $main-color;
+        font-weight: bold;
+      }
+      &.red{
+        color: $color-menu;
+      }
+    }
+  }
+}

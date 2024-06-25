@@ -1,0 +1,38 @@
+
+.cn-next-icon {
+  display: inline-flex !important;
+  align-items: center;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: inherit;
+  vertical-align: middle;
+  align-items: center;
+  &.cn-next-xxs{
+    font-size: $icon-xxs;
+  }
+  &.cn-next-xs{
+    font-size: $icon-xs;
+  }
+  &.cn-next-small{
+    font-size: $icon-s;
+  }
+  &.cn-next-medium{
+    font-size: $icon-m;
+  }
+  &.cn-next-large{
+    font-size: $icon-l;
+  }
+  &.cn-next-xl{
+    font-size: $icon-xl;
+  }
+  &.cn-next-xxl{
+    font-size: $icon-xxl;
+  }
+  &.cn-next-xxxl{
+    font-size: $icon-xxxl;
+  }
+  &.cn-next-inherit{
+    font-size: inherit;
+  }
+}

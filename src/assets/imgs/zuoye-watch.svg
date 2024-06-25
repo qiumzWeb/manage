@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>分时作业监控</title>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="正常状态" transform="translate(-267.000000, -508.000000)">
+            <g id="分时作业监控" transform="translate(267.000000, 508.000000)">
+                <path d="M4.8,0 L19.2,0 C22.4,0 24,1.6 24,4.8 L24,19.2 C24,22.4 22.4,24 19.2,24 L4.8,24 C1.6,24 0,22.4 0,19.2 L0,4.8 C0,1.6 1.6,0 4.8,0 Z" id="路径" fill="#3960DF" fill-rule="nonzero"></path>
+                <polyline id="路径-2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="5 11.9609375 8.76915099 16.921875 10.9484704 7 14.6616684 12.4426171 18.9834123 12.4426171"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

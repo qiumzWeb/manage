@@ -1,0 +1,14 @@
+.job-monitor{
+  height: 90%;
+  .job-m-title{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin: px2rem(10);
+    font-size: px2rem(14);
+  }
+  .job-chart{
+    width: 100%;
+    height: calc(100% - px2rem(20))
+  }
+}

@@ -1,0 +1,36 @@
+.sorting-wall-noshelf{
+  .selected {
+    // border-width: 4px;;
+    position: relative;
+    overflow: hidden !important;
+    font-weight: bold;
+    border-color: $color-menu;
+    &::after{
+      content: '';
+      width: 50px;
+      height: 50px;
+      background: $color-menu;
+      position: absolute;
+      right: -30px;
+      bottom: -30px;
+      transform: rotate(45deg);
+      z-index: 1;
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 6px;
+      border: 2px solid transparent;
+      border-bottom: 2px solid #fff;
+      border-left: 2px solid #fff;
+      transform: rotate(-45deg) translateY(-50%);
+      display: block;
+      right: 0px;
+      bottom: 6px;
+      font-size:inherit;
+      color:inherit;
+      z-index: 2;
+    }
+  }
+}

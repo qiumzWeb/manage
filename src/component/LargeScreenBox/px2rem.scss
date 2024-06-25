@@ -1,0 +1,178 @@
+.border {
+  border: px2rem(2) solid rgb(31, 73, 148);
+  box-shadow: px2rem(2) px2rem(2) px2rem(10) inset rgba(0,134,255,0.2);
+  border-radius: px2rem(8);
+}
+.border-block {
+  border: px2rem(2) solid rgb(31, 73, 148);
+  border-radius: px2rem(8);
+  box-shadow: inset px2rem(2) px2rem(2) px2rem(4) px2rem(4)  rgba(0,134,255,0.2);
+}
+.pcs-large-screen-box-component{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgb(6, 22, 58), #062b9b, rgb(6, 22, 58));
+  position: relative;
+  font-size: px2rem(12);
+  overflow: hidden;
+  .screen-content{
+    height: calc(100% - px2rem(60));
+    padding-top: px2rem(1);
+    padding-bottom: px2rem(20);
+    overflow: auto;
+  }
+  .screen-header{
+    position: relative;
+    height: px2rem(60);
+    color: rgb(0, 205, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 px2rem(100);
+    text-align: center;
+    .header-title{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: calc(100% - px2rem(380));
+      height: 100%;
+      text-shadow: px2rem(1) px2rem(1) px2rem(8) #000, px2rem(-1) px2rem(-1) px2rem(5) rgba(0, 205, 255, .5);
+      // border-bottom: px2rem(1) solid rgba(42, 87, 184, 0.1);
+      // border-bottom-left-radius: px2rem(30);
+      // border-bottom-right-radius: px2rem(30);
+    }
+    .header-sub{
+      position: absolute;
+      top: 0;
+      width: px2rem(300);
+      height: px2rem(34);
+      border: px2rem(2) solid rgba(42, 87, 184, 0.6);
+      border-bottom-right-radius: px2rem(20);
+      border-bottom-left-radius: px2rem(20);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: px2rem(5) px2rem(5) px2rem(10) inset rgba(42, 87, 184, 0.6);
+      .sub-cell{
+        width: 90%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+    .header-left{
+      left: 0;
+    }
+    .header-right{
+      right: 0;
+    }
+    .big-text{
+      font-size: px2rem(30);
+      line-height: 100%;
+    }
+    .normal-text{
+      font-size: px2rem(16);
+    }
+  }
+  .fullScreenBtn{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    width: px2rem(100);
+    height: px2rem(30);
+    border: px2rem(2) solid rgba(42, 87, 184, 0.6);
+    border-top-right-radius: px2rem(20);
+    border-top-left-radius: px2rem(20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: px2rem(5) px2rem(5) px2rem(10) inset rgba(42, 87, 184, 0.6);
+    transition: all 0.5s;
+    &.hide{
+      color: transparent;
+      bottom: px2rem(-20);
+      &:hover{
+        color: #fff;
+        bottom: 0;
+      }
+    }
+  }
+  .border-c{
+    color: #4D5056;
+  }
+  .success-c{
+    color: #0EEBB2;
+  }
+  .warn-c {
+    color: $fail-color;
+  }
+  .fail-c{
+    color: #FFFC70;
+  }
+  .white-c{
+    color: #fff;
+  }
+  .success-color-back{
+    background-color: #0EEBB2;
+  }
+  .warn-color-back {
+    background-color: $fail-color;
+  }
+  .fail-color-back{
+    background-color: #FFFC70;
+  }
+  .white-color-back{
+    background-color: #fff;
+  }
+  .success-bg{
+    background-color: rgba(14, 235, 178, .1);
+  }
+  .warn-bg {
+    // rgba(255, 143, 5, 1)
+    background-color: $fail-back;
+  }
+  .fail-bg {  
+    background-color: rgba(255, 252, 112, .1);
+  }
+  .border-bg{
+    background-color: #4D5056;
+  }
+  .white-bg{
+    background-color: #fff;
+  }
+  .title-c{
+    color: rgb(0, 205, 255);
+  }
+
+}
+
+.pcs-large-screen-card-item{
+  @extend .border-block;
+  position: relative;
+  padding: px2rem(16);
+  background-color: #001036;
+  .card-item-title{
+    color: #00B1FF;
+    position: absolute;
+    font-size: px2rem(18);
+    height: px2rem(36);
+    @extend .border;
+    top: px2rem(-22);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 px2rem(10);
+    border-radius: px2rem(10);
+    background-color: #001036;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: px2rem(1) px2rem(1) px2rem(5) #000;
+  }
+}
+.pcs-large-screen-label-item{
+  border-radius: px2rem(6);
+  padding: px2rem(2) px2rem(6);
+  box-shadow: inset px2rem(2) px2rem(2) px2rem(4) px2rem(4)  rgba(0,134,255,0.2);
+}

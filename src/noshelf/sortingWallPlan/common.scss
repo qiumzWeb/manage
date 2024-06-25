@@ -1,0 +1,29 @@
+.dialogFormItem {
+  padding-left: 30px;
+  margin: 20px;
+  .label{
+    display: inline-block;
+    min-width: 100px;
+    text-align: right;
+  }
+}
+.ruleNav{
+  background: #f4f4f4;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 10px;
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.warn{
+  width: 110%;
+  height: 40px;
+  line-height: 40px;
+  background: #f1e0c7;
+  color: #8a4a44;
+  margin: 0 -20px 10px;
+  padding: 0 20px;
+}

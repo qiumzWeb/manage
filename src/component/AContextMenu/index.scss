@@ -1,0 +1,36 @@
+
+.a-context-menu-popup{
+  position: fixed;
+  z-index: 1001;
+  background: #fff;
+  text-align: left;
+  border: 1px solid #dedede;
+  box-shadow: 2px 2px 4px rgb(0 0 0 / 50%);
+  line-height: 1.5;
+  color:#333;
+  font-size: 12px;
+  user-select: none;
+  .pcs-tips-selector{
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px;
+    position: relative;
+    &.small{
+      padding: 0 10px;
+    }
+    &.medium {
+      padding: 0 20px;
+    }
+    &:hover, &.active{
+      cursor: pointer;
+      background: $light-hover-color;
+      color: $main-color;
+      &.disabled{
+        background: inherit;
+        color: inherit;
+        cursor:default;
+      }
+    }
+  }
+}
+

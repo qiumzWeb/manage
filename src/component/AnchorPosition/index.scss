@@ -1,0 +1,50 @@
+.anchor-position{
+  display: flex;
+  position: relative;
+  height: 100%;
+  background-color: #fff;
+  &.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    z-index: 9999;
+  }
+  .anchor-position-title{
+    position: relative;
+    width: 300px;
+    height: 100%;
+    overflow: auto;
+    border-left: 1px solid #ccc;
+    font-weight: bold;
+    .anchor-position-title-cell{
+      padding: 10px;
+      cursor: pointer;
+      &.active, &:hover{
+        // font-weight: bold;
+        color: $color-menu;
+      }
+    }
+  }
+  .close-fullscreen{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+  }
+  .anchor-position-content{
+    width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    position: relative;
+    padding-left: 10px;
+    .anchor-position-content-cell{
+      border: 1px solid transparent;
+      &.active{
+        border: 1px solid $color-menu;
+      }
+    }
+  }
+}
